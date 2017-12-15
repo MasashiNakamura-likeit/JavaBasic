@@ -28,6 +28,21 @@ public class PTra04_05 {
 			// 文字列を数字に変換して、変数numに代入します
 			// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになり、プログラムが終了します
 			int myHand = Integer.parseInt(line);
+			
+			
+			if (myHand == 0) {
+				System.out.println("私の手は…グー！");
+			}else if (myHand == 1) {
+				System.out.println("私の手は…チョキ！");
+			}else if (myHand == 2){
+				System.out.println("私の手は…パー！");
+			}else {
+				System.out.println("真面目にやってくれないかなぁ…");
+				System.out.println("じゃあもう一度！");
+				System.out.println("");
+				continue;
+			}
+				
 
 			System.out.print("相手の手は・・・・・");
 
@@ -44,18 +59,50 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
+
+
 			if (cpuHand == 0) {
 				System.out.println("グー！");
+				if( myHand == 2 && cpuHand ==0) {
+					System.out.println("私の勝ち！！");
+					break;
+				} else if(myHand == cpuHand ){
+					System.out.println("あいこで…");
+					System.out.println("");
+				}else {
+					System.out.println("諦めたらそこで試合終了ですよ…");
+					System.out.println("");
+				}
 
 
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
+				if( myHand == 0 && cpuHand ==1) {
+					System.out.println("私の勝ち！！");
+					break;
+				}else if(myHand == cpuHand ){
+					System.out.println("あいこで…");
+					System.out.println("");
+				}else {
+					System.out.println("諦めたらそこで試合終了ですよ…");
+					System.out.println("");
+				}
 
 
 
 			} else {
 				System.out.println("パー！！");
+				if( myHand == 1 && cpuHand ==2) {
+					System.out.println("私の勝ち！！");
+					break;
+				}else if(myHand == cpuHand ){
+					System.out.println("あいこで…");
+					System.out.println("");
+				}else {
+					System.out.println("諦めたらそこで試合終了ですよ…");
+					System.out.println("");
+				}
 
 
 

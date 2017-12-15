@@ -36,5 +36,27 @@ public class PTra03_08 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
+		System.out.println("所持金は1000円です。");
+		
+		switch( num ) {
+		case 1:
+			num = 150;
+			System.out.println("オレンジジュースを購入しました。");
+			break;
+			
+		case 2:
+			num = 160;
+			System.out.println("リンゴジュースを購入しました。");
+			break;
+		
+		case 3:
+			num = 200;
+		 	System.out.println("コーヒーを購入しました。");
+		 	break;
+		}
+		
+		money = money - num;//会計
+		System.out.println( "会計後、所持金は" +  (money) + "円になりました。" );
+		System.out.println( "現在所持金は" + money + "円です。" );
 	}
 }
