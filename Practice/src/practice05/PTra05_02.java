@@ -31,7 +31,7 @@ public class PTra05_02 {
 		 *  ※##は変数inputの中身
 		 */
 		
-		switch( input % 2 ) {// inputを２で割って　偶数なら０　奇数なら１
+		switch( input % 2 ) {// inputを２で割って 偶数なら０ 奇数なら１
 			
 			case 0:
 				System.out.println( input + "は偶数です");
